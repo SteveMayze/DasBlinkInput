@@ -1,0 +1,53 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2902N
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM324
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM324AN
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LM324N
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP LP2980IM5-3.0/NOPB
+D MICROPOWER 50mA Regulator 
+K REGUL POWER  SOT-23-5
+F http://parts.io/detail/12193012/LP2980IM5-3.0%2FNOPB
+$ENDCMP
+#
+$CMP MCP6404-E/SL
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP Photodiode
+D Led
+$ENDCMP
+#
+$CMP TL074
+D Quad Op amp. Mos
+K AmpliOp Mos
+$ENDCMP
+#
+$CMP TLC274
+D Quad Op amp. Mos
+K AmpliOp Mos
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,18 @@
+* Z:\home\steve\pcbs\DasBlinkInput\spice\TransimpedenceAmplifier-01.asc
+V1 V+ 0 3
+V2 0 V- 0
+XU1 N003 N001 V+ V- N002 level.2 Avol=100k GBW=1Meg Slew=500k ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+I1 N001 N006 PULSE(0 100n .1 .01 .01 .2 .4 4)
+R1 N002 N001 1MEG
+R2 0 N002 10K
+I2 N003 N006 100p
+R3 N006 V+ 10K
+R4 0 N006 10K
+XU2 N002 N004 V+ V- N005 level.2 Avol=100k GBW=1Meg Slew=500k ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N004 V+ 10K
+R6 0 N004 10K
+R7 0 N005 10K
+.tran 1
+.lib UniversalOpamps2.sub
+.backanno
+.end
