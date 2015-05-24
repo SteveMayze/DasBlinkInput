@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DasBlinkInput)(type KiCad)(uri ${KIPRJMOD}/lib/DasBlinkInput.pretty)(options "")(descr ""))
+)
