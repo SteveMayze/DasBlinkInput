@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -126,7 +125,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 2900 8350 2900
 Text HLabel 8350 2900 2    60   Input ~ 0
-Channel3_Out
+PD3
 Text HLabel 8500 4300 2    60   Input ~ 0
 REF_IN
 Wire Wire Line
