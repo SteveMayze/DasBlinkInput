@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -231,10 +230,10 @@ U 1 1 5561BFBD
 P 5900 3900
 F 0 "RV201" H 5900 3800 50  0000 C CNN
 F 1 "POT" H 5900 3900 50  0000 C CNN
-F 2 "DasBlinkInput:P090L-02F25BR10K" H 5900 3900 60  0001 C CNN
+F 2 "DasBlinkInput:CT6EP" H 5900 3900 60  0001 C CNN
 F 3 "" H 5900 3900 60  0000 C CNN
-F 4 "P090L-02F25BR10K" H 5900 3900 60  0001 C CNN "MPN"
-F 5 "http://parts.io/detail/236178/P090L-02F25BR10K" H 5900 3900 60  0001 C CNN "Link"
+F 4 "CT6EP103-ND" H 5900 3900 60  0001 C CNN "MPN"
+F 5 "http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf" H 5900 3900 60  0001 C CNN "Link"
 	1    5900 3900
 	0    1    1    0   
 $EndComp
@@ -303,7 +302,7 @@ NoConn ~ 5900 3650
 Wire Wire Line
 	2650 3450 2650 3800
 Text HLabel 7900 2850 2    60   Input ~ 0
-Channel1_Out
+PD1
 Text HLabel 8050 4250 2    60   Input ~ 0
 REF_OUT
 Connection ~ 6550 4250

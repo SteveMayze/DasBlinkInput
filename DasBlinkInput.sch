@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -50,7 +49,7 @@ S 5850 1350 850  1050
 U 5561BBE6
 F0 "Channel 1 Photodetect" 60
 F1 "Channel1Photodetect.sch" 60
-F2 "Channel1_Out" I R 6700 1600 60 
+F2 "PD1" I R 6700 1600 60 
 F3 "REF_OUT" I L 5850 1950 60 
 $EndSheet
 $Sheet
@@ -58,7 +57,7 @@ S 5850 2600 850  950
 U 5561BC09
 F0 "Channel 2 Photodetect" 60
 F1 "Channel2Photodetect.sch" 60
-F2 "Channel2_Out" I R 6700 2900 60 
+F2 "PD2" I R 6700 2900 60 
 F3 "REF_IN" I L 5850 3200 60 
 $EndSheet
 $Sheet
@@ -66,7 +65,7 @@ S 5850 3800 850  950
 U 5561BC0C
 F0 "Channel 3 PhotoDetect" 60
 F1 "Channel3PhotoDetect.sch" 60
-F2 "Channel3_Out" I R 6700 4050 60 
+F2 "PD3" I R 6700 4050 60 
 F3 "REF_IN" I L 5850 4450 60 
 $EndSheet
 $Sheet
@@ -74,7 +73,7 @@ S 5850 5000 900  900
 U 5561BC0F
 F0 "Channel 4 PhotoDetect" 60
 F1 "Channel4PhotoDetect.sch" 60
-F2 "Channel4_Out" I R 6750 5250 60 
+F2 "PD4" I R 6750 5250 60 
 F3 "REF_IN" I L 5850 5600 60 
 $EndSheet
 $Comp
@@ -340,4 +339,21 @@ F 5 "Value" H 4400 3400 60  0001 C CNN "ConradPN"
 	0    1    1    0   
 $EndComp
 Connection ~ 4400 3050
+$Comp
+L CONN_01X01 P106
+U 1 1 55657041
+P 5100 3750
+F 0 "P106" V 5200 3750 50  0000 C CNN
+F 1 "Vref" V 5100 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5100 3750 60  0001 C CNN
+F 3 "" H 5100 3750 60  0000 C CNN
+F 4 "Value" H 5100 3750 60  0001 C CNN "MPN"
+F 5 "Value" H 5100 3750 60  0001 C CNN "Link"
+F 6 "Value" H 5100 3750 60  0001 C CNN "ConradPN"
+	1    5100 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3750 5500 3750
+Connection ~ 5500 3750
 $EndSCHEMATC
