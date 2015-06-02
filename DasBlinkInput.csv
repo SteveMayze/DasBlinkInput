@@ -1,0 +1,7 @@
+Reference, Quantity, Value, Footprint, Datasheet, MPN, ConradPN, Link
+"PD201, PD301, PD401, PD501, ",4,VBPW34SR,DasBlinkInput:VBPW34SR*,,VBPW34FAS,N/A,http://parts.io/detail/100078259/VBPW34SR
+"R201, R301, R401, R501, ",4,1MEG,Resistors_SMD:R_1206_HandSoldering,,RC1206FR-071ML,1209000 - 62,http://parts.io/detail/880921/RC1206FR-071ML
+"RV201, ",1,POT,DasBlinkInput:CT6EP,,CT6EP103,N/A,http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf
+"U101, ",1,LP2980IM5-3.0/NOPB,Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5,,LP2980IM5-3.0/NOPB,1262416 - 62,Value
+"U201, ",1,MCP6404,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,MCP6404-E/SL,1084976 - 62,http://parts.io/detail/3584122/MCP6404-E%2FSL
+"U202, ",1,LM339,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,LM339DE4,1010753 - 62 ,http://parts.io/detail/916254/LM339DE4
