@@ -1,7 +1,22 @@
 Reference, Quantity, Value, Footprint, Datasheet, MPN, ConradPN, Link
-"PD201, PD301, PD401, PD501, ",4,VBPW34SR,DasBlinkInput:VBPW34SR*,,VBPW34FAS,N/A,http://parts.io/detail/100078259/VBPW34SR
-"R201, R301, R401, R501, ",4,1MEG,Resistors_SMD:R_1206_HandSoldering,,RC1206FR-071ML,1209000 - 62,http://parts.io/detail/880921/RC1206FR-071ML
-"RV201, ",1,POT,DasBlinkInput:CT6EP,,CT6EP103,N/A,http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf
-"U101, ",1,LP2980IM5-3.0/NOPB,Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5,,LP2980IM5-3.0/NOPB,1262416 - 62,Value
-"U201, ",1,MCP6404,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,MCP6404-E/SL,1084976 - 62,http://parts.io/detail/3584122/MCP6404-E%2FSL
-"U202, ",1,LM339,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,LM339DE4,1010753 - 62 ,http://parts.io/detail/916254/LM339DE4
+C101 C102 ,2,1U,Capacitors_SMD:C_0805_HandSoldering,
+C201 C301 C401 C501 ,4,100p,Capacitors_SMD:C_0805_HandSoldering,
+C202 C203 ,2,0.1U,Capacitors_SMD:C_0805_HandSoldering,
+P101 ,1,Vin,Pin_Headers:Pin_Header_Straight_1x02,,"Value","Value",
+P102 ,1,VGND,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value",
+P103 ,1,3V,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value",
+P104 ,1,GND,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value",
+P105 ,1,Output,Pin_Headers:Pin_Header_Straight_1x05,,"Value","Value",
+P106 ,1,Vref,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value","Value"
+P201 ,1,Sig1,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value",
+P301 ,1,Sig2,Pin_Headers:Pin_Header_Straight_1x01,,"Value","Value",
+P401 ,1,Sig3,Pin_Headers:Pin_Header_Straight_1x01,
+P501 ,1,Sig4,Pin_Headers:Pin_Header_Straight_1x01,
+PD201 PD301 PD401 PD501 ,4,VBPW34SR,DasBlinkInput:VBPW34SR*,,"VBPW34FAS","152965 - 62","http://parts.io/detail/100078259/VBPW34SR"
+R101 R102 R202 R203 ,4,10K,Resistors_SMD:R_0805_HandSoldering,
+R103 ,1,0,Resistors_SMD:R_0805_HandSoldering,
+R201 R301 R401 R501 ,4,1MEG,Resistors_SMD:R_1206_HandSoldering,,"RC1206FR-071ML","1209000 - 62","http://parts.io/detail/880921/RC1206FR-071ML"
+RV201 ,1,POT,DasBlinkInput:CT6EP,,"CT6EP103","675101 - 62","http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf"
+U101 ,1,LP2980IM5-3.0/NOPB,Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5,,"LP2980IM5-3.0/NOPB","1262416 - 62","Value"
+U201 ,1,MCP6404,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,"MCP6404-E/SL","1084976 - 62","http://parts.io/detail/3584122/MCP6404-E%2FSL"
+U202 ,1,LM339,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,,"LM339DE4","1010753 - 62 ","http://parts.io/detail/916254/LM339DE4"

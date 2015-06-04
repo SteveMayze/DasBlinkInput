@@ -92,8 +92,8 @@ F 1 "VBPW34SR" H 2500 3270 50  0000 L CNN
 F 2 "DasBlinkInput:VBPW34SR*" V 2650 3350 60  0001 C CNN
 F 3 "" V 2650 3350 60  0000 C CNN
 F 4 "VBPW34FAS" H 2650 3350 60  0001 C CNN "MPN"
-F 5 "http://parts.io/detail/100078259/VBPW34SR" H 2650 3350 60  0001 C CNN "Link"
-F 6 "N/A" H 2650 3350 60  0001 C CNN "ConradPN"
+F 5 "152965 - 62" H 2650 3350 60  0001 C CNN "ConradPN"
+F 6 "http://parts.io/detail/100078259/VBPW34SR" H 2650 3350 60  0001 C CNN "Link"
 	1    2650 3350
 	0    -1   -1   0   
 $EndComp
@@ -237,8 +237,8 @@ F 1 "POT" H 5900 3900 50  0000 C CNN
 F 2 "DasBlinkInput:CT6EP" H 5900 3900 60  0001 C CNN
 F 3 "" H 5900 3900 60  0000 C CNN
 F 4 "CT6EP103" H 5900 3900 60  0001 C CNN "MPN"
-F 5 "http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf" H 5900 3900 60  0001 C CNN "Link"
-F 6 "N/A" H 5900 3900 60  0001 C CNN "ConradPN"
+F 5 "675101 - 62" H 5900 3900 60  0001 C CNN "ConradPN"
+F 6 "http://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf" H 5900 3900 60  0001 C CNN "Link"
 	1    5900 3900
 	0    1    1    0   
 $EndComp
