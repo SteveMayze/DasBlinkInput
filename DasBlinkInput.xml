@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/steve/Documents/PCBs/DasBlinkInput/DasBlinkInput.sch</source>
-    <date>2015 June 04, Thursday 17:33:28</date>
-    <tool>Eeschema (2015-05-26 BZR 5680)-product</tool>
+    <source>/home/steve/pcbs/DasBlinkInput/DasBlinkInput.sch</source>
+    <date>Sat 04 Jul 2015 16:41:25 CEST</date>
+    <tool>Eeschema 0.201507012246+5852~23~ubuntu14.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -411,125 +411,6 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="linear" part="LM339">
-      <description>Quad comparator.</description>
-      <docs>op_amps/lm139.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM339</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="openCol"/>
-        <pin num="2" name="~" type="openCol"/>
-        <pin num="3" name="V+" type="power_in"/>
-        <pin num="4" name="-" type="input"/>
-        <pin num="5" name="+" type="input"/>
-        <pin num="6" name="-" type="input"/>
-        <pin num="7" name="+" type="input"/>
-        <pin num="8" name="-" type="input"/>
-        <pin num="9" name="+" type="input"/>
-        <pin num="10" name="-" type="input"/>
-        <pin num="11" name="+" type="input"/>
-        <pin num="12" name="GND" type="power_in"/>
-        <pin num="13" name="~" type="openCol"/>
-        <pin num="14" name="~" type="openCol"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="C">
-      <description>Unpolarized capacitor</description>
-      <footprints>
-        <fp>C?</fp>
-        <fp>C_????_*</fp>
-        <fp>C_????</fp>
-        <fp>SMD*_c</fp>
-        <fp>Capacitor*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="POT">
-      <description>Potentionmetre</description>
-      <fields>
-        <field name="Reference">RV</field>
-        <field name="Value">POT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="R">
-      <description>Resistor</description>
-      <footprints>
-        <fp>R_*</fp>
-        <fp>Resistor_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X01">
-      <footprints>
-        <fp>Pin_Header_Straight_1X01</fp>
-        <fp>Pin_Header_Angled_1X01</fp>
-        <fp>Socket_Strip_Straight_1X01</fp>
-        <fp>Socket_Strip_Angled_1X01</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X01</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X02">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="CONN_01X05">
-      <footprints>
-        <fp>Pin_Header_Straight_1X05</fp>
-        <fp>Pin_Header_Angled_1X05</fp>
-        <fp>Socket_Strip_Straight_1X05</fp>
-        <fp>Socket_Strip_Angled_1X05</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X05</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="DasBlinkInput" part="LP2980IM5-3.0/NOPB">
       <description>MICROPOWER 50mA Regulator </description>
       <docs>http://parts.io/detail/12193012/LP2980IM5-3.0%2FNOPB</docs>
@@ -584,150 +465,269 @@
         <pin num="2" name="C" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="linear" part="LM339">
+      <description>Quad comparator.</description>
+      <docs>op_amps/lm139.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM339</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="openCol"/>
+        <pin num="2" name="~" type="openCol"/>
+        <pin num="3" name="V+" type="power_in"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="+" type="input"/>
+        <pin num="8" name="-" type="input"/>
+        <pin num="9" name="+" type="input"/>
+        <pin num="10" name="-" type="input"/>
+        <pin num="11" name="+" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="~" type="openCol"/>
+        <pin num="14" name="~" type="openCol"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <footprints>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X05">
+      <footprints>
+        <fp>Pin_Header_Straight_1X05</fp>
+        <fp>Pin_Header_Angled_1X05</fp>
+        <fp>Socket_Strip_Straight_1X05</fp>
+        <fp>Socket_Strip_Angled_1X05</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="linear">
-      <uri>/Library/Application Support/kicad/library/linear.lib</uri>
-    </library>
     <library logical="device">
-      <uri>/Library/Application Support/kicad/library/device.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="DasBlinkInput">
-      <uri>/Users/steve/Documents/PCBs/DasBlinkInput/lib/DasBlinkInput.lib</uri>
+      <uri>/home/steve/pcbs/DasBlinkInput/lib/DasBlinkInput.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>/usr/share/kicad/library/linear.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="3V">
-      <node ref="C203" pin="2"/>
-      <node ref="U201" pin="4"/>
-      <node ref="P103" pin="1"/>
-      <node ref="U202" pin="3"/>
+    <net code="1" name="Net-(R103-Pad1)">
+      <node ref="R103" pin="1"/>
+      <node ref="U101" pin="3"/>
+    </net>
+    <net code="2" name="3V">
       <node ref="C202" pin="2"/>
+      <node ref="U202" pin="3"/>
       <node ref="R203" pin="2"/>
+      <node ref="P103" pin="1"/>
+      <node ref="C203" pin="2"/>
       <node ref="U101" pin="5"/>
+      <node ref="U201" pin="4"/>
       <node ref="R101" pin="1"/>
       <node ref="C102" pin="1"/>
     </net>
-    <net code="2" name="Net-(U101-Pad4)">
+    <net code="3" name="Net-(U101-Pad4)">
       <node ref="U101" pin="4"/>
     </net>
-    <net code="3" name="Net-(R103-Pad1)">
-      <node ref="U101" pin="3"/>
-      <node ref="R103" pin="1"/>
-    </net>
-    <net code="4" name="Net-(C101-Pad1)">
-      <node ref="U101" pin="1"/>
-      <node ref="C101" pin="1"/>
-      <node ref="P101" pin="2"/>
-    </net>
-    <net code="5" name="VGND">
-      <node ref="U201" pin="12"/>
-      <node ref="PD501" pin="1"/>
-      <node ref="U201" pin="5"/>
-      <node ref="PD301" pin="1"/>
-      <node ref="U201" pin="10"/>
-      <node ref="PD401" pin="1"/>
-      <node ref="U201" pin="3"/>
-      <node ref="PD201" pin="1"/>
-      <node ref="R102" pin="1"/>
-      <node ref="P102" pin="1"/>
-      <node ref="R101" pin="2"/>
-    </net>
-    <net code="6" name="GND">
-      <node ref="R102" pin="2"/>
-      <node ref="C203" pin="1"/>
-      <node ref="U101" pin="2"/>
-      <node ref="P101" pin="1"/>
+    <net code="4" name="GND">
       <node ref="C202" pin="1"/>
-      <node ref="U202" pin="12"/>
-      <node ref="P104" pin="1"/>
-      <node ref="R103" pin="2"/>
-      <node ref="U201" pin="11"/>
       <node ref="C101" pin="2"/>
       <node ref="C102" pin="2"/>
+      <node ref="U201" pin="11"/>
+      <node ref="U202" pin="12"/>
+      <node ref="P101" pin="1"/>
+      <node ref="R103" pin="2"/>
+      <node ref="R102" pin="2"/>
+      <node ref="C203" pin="1"/>
+      <node ref="P104" pin="1"/>
       <node ref="R202" pin="1"/>
       <node ref="P105" pin="5"/>
+      <node ref="U101" pin="2"/>
     </net>
-    <net code="7" name="/Channel 4 PhotoDetect/PD4">
+    <net code="5" name="Net-(C101-Pad1)">
+      <node ref="C101" pin="1"/>
+      <node ref="P101" pin="2"/>
+      <node ref="U101" pin="1"/>
+    </net>
+    <net code="6" name="VGND">
+      <node ref="U201" pin="12"/>
+      <node ref="PD501" pin="1"/>
+      <node ref="PD401" pin="1"/>
+      <node ref="PD301" pin="1"/>
+      <node ref="U201" pin="5"/>
+      <node ref="U201" pin="10"/>
+      <node ref="R102" pin="1"/>
+      <node ref="U201" pin="3"/>
+      <node ref="PD201" pin="1"/>
+      <node ref="R101" pin="2"/>
+      <node ref="P102" pin="1"/>
+    </net>
+    <net code="7" name="/Channel 1 Photodetect/PD1">
+      <node ref="P105" pin="1"/>
+      <node ref="U202" pin="2"/>
+    </net>
+    <net code="8" name="/Channel 4 PhotoDetect/PD4">
       <node ref="U202" pin="14"/>
       <node ref="P105" pin="4"/>
-    </net>
-    <net code="8" name="/Channel 2 Photodetect/REF_IN">
-      <node ref="U202" pin="4"/>
-      <node ref="P106" pin="1"/>
-      <node ref="U202" pin="10"/>
-      <node ref="U202" pin="6"/>
-      <node ref="R202" pin="2"/>
-      <node ref="RV201" pin="3"/>
-      <node ref="U202" pin="8"/>
     </net>
     <net code="9" name="/Channel 3 PhotoDetect/PD3">
       <node ref="P105" pin="3"/>
       <node ref="U202" pin="13"/>
     </net>
     <net code="10" name="/Channel 2 Photodetect/PD2">
-      <node ref="P105" pin="2"/>
       <node ref="U202" pin="1"/>
+      <node ref="P105" pin="2"/>
     </net>
-    <net code="11" name="/Channel 1 Photodetect/PD1">
-      <node ref="U202" pin="2"/>
-      <node ref="P105" pin="1"/>
+    <net code="11" name="/Channel 2 Photodetect/REF_IN">
+      <node ref="U202" pin="10"/>
+      <node ref="R202" pin="2"/>
+      <node ref="P106" pin="1"/>
+      <node ref="U202" pin="6"/>
+      <node ref="U202" pin="4"/>
+      <node ref="U202" pin="8"/>
+      <node ref="RV201" pin="3"/>
     </net>
     <net code="12" name="Net-(R203-Pad1)">
-      <node ref="RV201" pin="2"/>
       <node ref="R203" pin="1"/>
+      <node ref="RV201" pin="2"/>
     </net>
     <net code="13" name="Net-(RV201-Pad1)">
       <node ref="RV201" pin="1"/>
     </net>
-    <net code="14" name="Net-(C201-Pad1)">
+    <net code="14" name="Net-(C201-Pad2)">
+      <node ref="PD201" pin="2"/>
+      <node ref="U201" pin="2"/>
+      <node ref="R201" pin="2"/>
+      <node ref="C201" pin="2"/>
+    </net>
+    <net code="15" name="Net-(C201-Pad1)">
+      <node ref="R201" pin="1"/>
+      <node ref="U202" pin="5"/>
       <node ref="P201" pin="1"/>
       <node ref="U201" pin="1"/>
-      <node ref="U202" pin="5"/>
       <node ref="C201" pin="1"/>
-      <node ref="R201" pin="1"/>
-    </net>
-    <net code="15" name="Net-(C201-Pad2)">
-      <node ref="C201" pin="2"/>
-      <node ref="R201" pin="2"/>
-      <node ref="U201" pin="2"/>
-      <node ref="PD201" pin="2"/>
     </net>
     <net code="18" name="Net-(C301-Pad1)">
-      <node ref="C301" pin="1"/>
-      <node ref="R301" pin="1"/>
-      <node ref="U201" pin="7"/>
       <node ref="P301" pin="1"/>
       <node ref="U202" pin="7"/>
+      <node ref="U201" pin="7"/>
+      <node ref="C301" pin="1"/>
+      <node ref="R301" pin="1"/>
     </net>
     <net code="21" name="Net-(C301-Pad2)">
-      <node ref="C301" pin="2"/>
-      <node ref="R301" pin="2"/>
       <node ref="U201" pin="6"/>
+      <node ref="R301" pin="2"/>
+      <node ref="C301" pin="2"/>
       <node ref="PD301" pin="2"/>
     </net>
-    <net code="24" name="Net-(C401-Pad2)">
+    <net code="24" name="Net-(C401-Pad1)">
+      <node ref="U201" pin="8"/>
+      <node ref="R401" pin="1"/>
+      <node ref="C401" pin="1"/>
+      <node ref="P401" pin="1"/>
+      <node ref="U202" pin="11"/>
+    </net>
+    <net code="25" name="Net-(C401-Pad2)">
+      <node ref="U201" pin="9"/>
       <node ref="PD401" pin="2"/>
       <node ref="C401" pin="2"/>
-      <node ref="U201" pin="9"/>
       <node ref="R401" pin="2"/>
-    </net>
-    <net code="27" name="Net-(C401-Pad1)">
-      <node ref="U202" pin="11"/>
-      <node ref="P401" pin="1"/>
-      <node ref="C401" pin="1"/>
-      <node ref="R401" pin="1"/>
-      <node ref="U201" pin="8"/>
     </net>
     <net code="30" name="Net-(C501-Pad1)">
       <node ref="U201" pin="14"/>
-      <node ref="U202" pin="9"/>
-      <node ref="P501" pin="1"/>
-      <node ref="C501" pin="1"/>
       <node ref="R501" pin="1"/>
+      <node ref="P501" pin="1"/>
+      <node ref="U202" pin="9"/>
+      <node ref="C501" pin="1"/>
     </net>
     <net code="31" name="Net-(C501-Pad2)">
       <node ref="U201" pin="13"/>
