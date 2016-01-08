@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:DasBlinkInput
+LIBS:DasBlinkInput-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -49,7 +50,7 @@ U 1 1 5561C42E
 P 4950 1750
 F 0 "C301" H 4975 1850 50  0000 L CNN
 F 1 "100p" H 4975 1650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4988 1600 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 4988 1600 30  0001 C CNN
 F 3 "" H 4950 1750 60  0000 C CNN
 	1    4950 1750
 	0    1    1    0   
@@ -97,7 +98,7 @@ F 6 "http://parts.io/detail/100078259/VBPW34SR" H 3550 3600 60  0001 C CNN "Link
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5450 3000 7100 3000
+	5450 3000 7150 3000
 Wire Wire Line
 	5900 2150 5900 3000
 Wire Wire Line
@@ -123,9 +124,9 @@ Connection ~ 5900 3000
 Wire Wire Line
 	6900 4500 6900 3200
 Wire Wire Line
-	6900 3200 7100 3200
+	6900 3200 7150 3200
 Wire Wire Line
-	7800 3100 8250 3100
+	7750 3100 8250 3100
 Text HLabel 8250 3100 2    60   Input ~ 0
 PD2
 Text HLabel 8400 4500 2    60   Input ~ 0
