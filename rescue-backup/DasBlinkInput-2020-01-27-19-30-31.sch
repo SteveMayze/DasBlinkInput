@@ -1,5 +1,36 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkInput
+LIBS:DasBlinkInput-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +77,20 @@ F2 "PD4" I R 6750 5250 60
 F3 "REF_IN" I L 5850 5600 60 
 $EndSheet
 $Comp
-L power:GND #PWR01
+L CONN_01X05 P105
+U 1 1 5561D7BD
+P 9100 1800
+F 0 "P105" H 9100 2100 50  0000 C CNN
+F 1 "Output" V 9200 1800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 9100 1800 60  0001 C CNN
+F 3 "" H 9100 1800 60  0000 C CNN
+F 4 "Value" H 9100 1800 60  0001 C CNN "MPN"
+F 5 "Value" H 9100 1800 60  0001 C CNN "ConradPN"
+	1    9100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
 U 1 1 5561D984
 P 8250 2450
 F 0 "#PWR01" H 8250 2200 50  0001 C CNN
@@ -57,7 +101,20 @@ F 3 "" H 8250 2450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L CONN_01X02 P101
+U 1 1 5561D9DD
+P 950 1600
+F 0 "P101" H 950 1750 50  0000 C CNN
+F 1 "Vin" H 950 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 950 1600 60  0001 C CNN
+F 3 "" H 950 1600 60  0000 C CNN
+F 4 "Value" H 950 1600 60  0001 C CNN "MPN"
+F 5 "Value" H 950 1600 60  0001 C CNN "ConradPN"
+	1    950  1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
 U 1 1 5561DB52
 P 1300 2000
 F 0 "#PWR02" H 1300 1750 50  0001 C CNN
@@ -68,7 +125,7 @@ F 3 "" H 1300 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DasBlinkInput-rescue:LP2980IM5-3.0_NOPB U101
+L LP2980IM5-3.0/NOPB U101
 U 1 1 5561E1C9
 P 3400 1850
 F 0 "U101" H 3600 1400 60  0000 C CNN
@@ -82,7 +139,7 @@ F 6 "1262416 - 62" H 3400 1850 60  0001 C CNN "ConradPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C101
+L C C101
 U 1 1 5561E2B3
 P 1850 2350
 F 0 "C101" H 1875 2450 50  0000 L CNN
@@ -93,7 +150,7 @@ F 3 "" H 1850 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C102
+L C C102
 U 1 1 5561E446
 P 4400 2500
 F 0 "C102" H 4425 2600 50  0000 L CNN
@@ -106,7 +163,7 @@ $EndComp
 Wire Wire Line
 	5850 1950 5500 1950
 Wire Wire Line
-	5500 1950 5500 3200
+	5500 1950 5500 5600
 Wire Wire Line
 	5500 3200 5850 3200
 Wire Wire Line
@@ -116,21 +173,21 @@ Wire Wire Line
 	5500 5600 5850 5600
 Connection ~ 5500 4450
 Wire Wire Line
-	6700 1600 8050 1600
+	6700 1600 8900 1600
 Wire Wire Line
-	7450 1700 8300 1700
+	7450 1700 8900 1700
 Wire Wire Line
 	7450 1700 7450 2900
 Wire Wire Line
 	7450 2900 6700 2900
 Wire Wire Line
-	7600 1800 8550 1800
+	7600 1800 8900 1800
 Wire Wire Line
 	7600 1800 7600 4050
 Wire Wire Line
 	7600 4050 6700 4050
 Wire Wire Line
-	7700 1900 8800 1900
+	7700 1900 8900 1900
 Wire Wire Line
 	7700 1900 7700 5250
 Wire Wire Line
@@ -144,25 +201,25 @@ Wire Wire Line
 Wire Wire Line
 	1300 1650 1300 2000
 Wire Wire Line
-	1150 1550 1850 1550
+	1150 1550 2600 1550
 Wire Wire Line
 	1850 1550 1850 2200
 Connection ~ 1850 1550
 Wire Wire Line
 	1850 2500 1850 3050
 Wire Wire Line
-	1850 3050 3400 3050
+	1850 3050 4400 3050
 Wire Wire Line
-	3400 2550 3400 3050
+	3400 2550 3400 3300
 Wire Wire Line
-	4200 1550 4400 1550
+	4200 1550 4750 1550
 Wire Wire Line
-	4400 1400 4400 1550
+	4400 1400 4400 2350
 Wire Wire Line
-	4400 2650 4400 3050
+	4400 2650 4400 3200
 Connection ~ 3400 3050
 $Comp
-L Device:R R103
+L R R103
 U 1 1 5561E72D
 P 2250 1750
 F 0 "R103" V 2330 1750 50  0000 C CNN
@@ -179,7 +236,7 @@ Text GLabel 4750 1550 2    60   Input ~ 0
 3V
 Connection ~ 4400 1550
 $Comp
-L Device:R R101
+L R R101
 U 1 1 5561EEBB
 P 1250 3750
 F 0 "R101" V 1330 3750 50  0000 C CNN
@@ -190,7 +247,7 @@ F 3 "" H 1250 3750 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R102
+L R R102
 U 1 1 5561EF40
 P 1250 4450
 F 0 "R102" V 1330 4450 50  0000 C CNN
@@ -207,9 +264,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 3300 1250 3600
 Wire Wire Line
-	1250 3900 1250 4050
+	1250 3900 1250 4300
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5561F04C
 P 3400 3300
 F 0 "#PWR03" H 3400 3050 50  0001 C CNN
@@ -220,7 +277,7 @@ F 3 "" H 3400 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5561F111
 P 1250 4800
 F 0 "#PWR04" H 1250 4550 50  0001 C CNN
@@ -235,17 +292,70 @@ Wire Wire Line
 Text GLabel 2000 4050 2    60   Input ~ 0
 VGND
 Wire Wire Line
-	1250 4050 1750 4050
+	1250 4050 2000 4050
 Connection ~ 1250 4050
+$Comp
+L CONN_01X01 P103
+U 1 1 55620066
+P 4400 1200
+F 0 "P103" V 4500 1200 50  0000 C CNN
+F 1 "3V" V 4400 1100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4400 1200 60  0001 C CNN
+F 3 "" H 4400 1200 60  0000 C CNN
+F 4 "Value" H 4400 1200 60  0001 C CNN "MPN"
+F 5 "Value" H 4400 1200 60  0001 C CNN "ConradPN"
+	1    4400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 55620185
+P 1750 3650
+F 0 "P102" V 1850 3650 50  0000 C CNN
+F 1 "VGND" V 1750 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1750 3650 60  0001 C CNN
+F 3 "" H 1750 3650 60  0000 C CNN
+F 4 "Value" H 1750 3650 60  0001 C CNN "MPN"
+F 5 "Value" H 1750 3650 60  0001 C CNN "ConradPN"
+	1    1750 3650
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	1750 3850 1750 4050
 Connection ~ 1750 4050
+$Comp
+L CONN_01X01 P104
+U 1 1 55620292
+P 4400 3400
+F 0 "P104" V 4550 3400 50  0000 C CNN
+F 1 "GND" V 4400 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4400 3400 60  0001 C CNN
+F 3 "" H 4400 3400 60  0000 C CNN
+F 4 "Value" H 4400 3400 60  0001 C CNN "MPN"
+F 5 "Value" H 4400 3400 60  0001 C CNN "ConradPN"
+	1    4400 3400
+	0    1    1    0   
+$EndComp
 Connection ~ 4400 3050
+$Comp
+L CONN_01X01 P106
+U 1 1 55657041
+P 5100 3750
+F 0 "P106" V 5200 3750 50  0000 C CNN
+F 1 "Vref" V 5100 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5100 3750 60  0001 C CNN
+F 3 "" H 5100 3750 60  0000 C CNN
+F 4 "Value" H 5100 3750 60  0001 C CNN "MPN"
+F 5 "Value" H 5100 3750 60  0001 C CNN "Link"
+F 6 "Value" H 5100 3750 60  0001 C CNN "ConradPN"
+	1    5100 3750
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	5300 3750 5500 3750
 Connection ~ 5500 3750
 $Comp
-L Device:R R104
+L R R104
 U 1 1 55A0F5AF
 P 8050 1200
 F 0 "R104" V 8130 1200 50  0000 C CNN
@@ -256,7 +366,7 @@ F 3 "" H 8050 1200 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R105
+L R R105
 U 1 1 55A0F734
 P 8300 1200
 F 0 "R105" V 8380 1200 50  0000 C CNN
@@ -267,7 +377,7 @@ F 3 "" H 8300 1200 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R106
+L R R106
 U 1 1 55A0F7B4
 P 8550 1200
 F 0 "R106" V 8630 1200 50  0000 C CNN
@@ -278,7 +388,7 @@ F 3 "" H 8550 1200 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R107
+L R R107
 U 1 1 55A0F825
 P 8800 1200
 F 0 "R107" V 8880 1200 50  0000 C CNN
@@ -303,7 +413,7 @@ Connection ~ 8800 1900
 Text GLabel 7500 900  0    60   Input ~ 0
 3V
 Wire Wire Line
-	7500 900  8050 900 
+	7500 900  8800 900 
 Wire Wire Line
 	8800 900  8800 1050
 Wire Wire Line
@@ -320,108 +430,4 @@ Wire Wire Line
 Wire Wire Line
 	2000 1750 2000 1550
 Connection ~ 2000 1550
-Wire Wire Line
-	5500 3200 5500 3750
-Wire Wire Line
-	5500 4450 5500 5600
-Wire Wire Line
-	1850 1550 2000 1550
-Wire Wire Line
-	3400 3050 4400 3050
-Wire Wire Line
-	3400 3050 3400 3300
-Wire Wire Line
-	4400 1550 4750 1550
-Wire Wire Line
-	4400 1550 4400 2350
-Wire Wire Line
-	1250 4050 1250 4300
-Wire Wire Line
-	1750 4050 2000 4050
-Wire Wire Line
-	4400 3050 4400 3200
-Wire Wire Line
-	5500 3750 5500 4450
-Wire Wire Line
-	8050 1600 8900 1600
-Wire Wire Line
-	8300 1700 8900 1700
-Wire Wire Line
-	8550 1800 8900 1800
-Wire Wire Line
-	8800 1900 8900 1900
-Wire Wire Line
-	8550 900  8800 900 
-Wire Wire Line
-	8300 900  8550 900 
-Wire Wire Line
-	8050 900  8300 900 
-Wire Wire Line
-	2000 1550 2600 1550
-$Comp
-L Connector:TestPoint P103
-U 1 1 5E3438E1
-P 4400 1400
-F 0 "P103" H 4458 1518 50  0000 L CNN
-F 1 "TestPoint" H 4458 1427 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4600 1400 50  0001 C CNN
-F 3 "~" H 4600 1400 50  0001 C CNN
-	1    4400 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint P106
-U 1 1 5E3444B9
-P 5300 3750
-F 0 "P106" V 5495 3822 50  0000 C CNN
-F 1 "TestPoint" V 5404 3822 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5500 3750 50  0001 C CNN
-F 3 "~" H 5500 3750 50  0001 C CNN
-	1    5300 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint P104
-U 1 1 5E345B01
-P 4400 3200
-F 0 "P104" H 4342 3226 50  0000 R CNN
-F 1 "TestPoint" H 4342 3317 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4600 3200 50  0001 C CNN
-F 3 "~" H 4600 3200 50  0001 C CNN
-	1    4400 3200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint P102
-U 1 1 5E346B1A
-P 1750 3850
-F 0 "P102" H 1808 3968 50  0000 L CNN
-F 1 "TestPoint" H 1808 3877 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1950 3850 50  0001 C CNN
-F 3 "~" H 1950 3850 50  0001 C CNN
-	1    1750 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female P101
-U 1 1 5E3482F8
-P 950 1550
-F 0 "P101" H 842 1735 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 842 1644 50  0000 C CNN
-F 2 "" H 950 1550 50  0001 C CNN
-F 3 "~" H 950 1550 50  0001 C CNN
-	1    950  1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male P105
-U 1 1 5E34A7EA
-P 9100 1800
-F 0 "P105" H 9072 1824 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 9072 1733 50  0000 R CNN
-F 2 "" H 9100 1800 50  0001 C CNN
-F 3 "~" H 9100 1800 50  0001 C CNN
-	1    9100 1800
-	-1   0    0    -1  
-$EndComp
 $EndSCHEMATC

@@ -1,5 +1,36 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkInput
+LIBS:DasBlinkInput-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C401
+L C C401
 U 1 1 5561C979
 P 5050 1550
 F 0 "C401" H 5075 1650 50  0000 L CNN
@@ -25,7 +56,7 @@ F 3 "" H 5050 1550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R401
+L R R401
 U 1 1 5561C982
 P 5000 1950
 F 0 "R401" V 5080 1950 50  0000 C CNN
@@ -39,7 +70,7 @@ F 6 "1209000 - 62" H 5000 1950 60  0001 C CNN "ConradPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L DasBlinkInput-rescue:MCP6404-E_SL U201
+L MCP6404-E/SL U201
 U 3 1 5561C98B
 P 5050 2800
 F 0 "U201" H 5100 3000 60  0000 C CNN
@@ -53,7 +84,7 @@ F 6 "1084976 - 62" H 5050 2800 60  0001 C CNN "ConradPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L DasBlinkInput:Photodiode PD401
+L Photodiode PD401
 U 1 1 5561C994
 P 3650 3400
 F 0 "PD401" H 3560 3506 50  0000 L CNN
@@ -67,17 +98,17 @@ F 6 "http://parts.io/detail/100078259/VBPW34SR" H 3650 3400 60  0001 C CNN "Link
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5550 2800 6000 2800
+	5550 2800 7250 2800
 Wire Wire Line
 	6000 1950 6000 2800
 Wire Wire Line
-	5150 1950 5400 1950
+	5150 1950 6000 1950
 Wire Wire Line
 	4550 2700 3650 2700
 Wire Wire Line
-	3650 1950 3650 2700
+	3650 1950 3650 3300
 Wire Wire Line
-	3650 1950 4650 1950
+	3650 1950 4850 1950
 Connection ~ 3650 2700
 Wire Wire Line
 	4900 1550 4650 1550
@@ -102,48 +133,41 @@ Text HLabel 8500 4300 2    60   Input ~ 0
 REF_IN
 Wire Wire Line
 	7000 4300 8500 4300
+$Comp
+L LM339 U202
+U 3 1 5561C9B8
+P 7550 2900
+F 0 "U202" H 7600 3100 60  0000 C CNN
+F 1 "LM339" H 7650 2700 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7550 2900 60  0001 C CNN
+F 3 "" H 7550 2900 60  0000 C CNN
+F 4 "LM339DE4" H 7550 2900 60  0001 C CNN "MPN"
+F 5 "http://parts.io/detail/916254/LM339DE4" H 7550 2900 60  0001 C CNN "Link"
+F 6 "1010753 - 62 " H 7550 2900 60  0001 C CNN "ConradPN"
+	3    7550 2900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4550 3750 4550 2900
 Wire Wire Line
-	3300 3750 3650 3750
+	3300 3750 4550 3750
 Connection ~ 3650 3750
 Text GLabel 3300 3750 0    60   Input ~ 0
 VGND
 Wire Wire Line
 	3650 3750 3650 3500
-Wire Wire Line
-	3650 2700 3650 3300
-Wire Wire Line
-	4650 1950 4850 1950
-Wire Wire Line
-	5400 1950 6000 1950
-Wire Wire Line
-	3650 3750 4550 3750
 $Comp
-L Comparator:LM339 U?
-U 3 1 5E3364F8
-P 7550 2900
-F 0 "U?" H 7550 3267 50  0000 C CNN
-F 1 "LM339" H 7550 3176 50  0000 C CNN
-F 2 "" H 7500 3000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7600 3100 50  0001 C CNN
-	3    7550 2900
-	1    0    0    -1  
+L CONN_01X01 P401
+U 1 1 5561F96E
+P 6550 2400
+F 0 "P401" H 6550 2500 50  0000 C CNN
+F 1 "Sig3" V 6550 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6550 2400 60  0001 C CNN
+F 3 "" H 6550 2400 60  0000 C CNN
+	1    6550 2400
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:TestPoint P401
-U 1 1 5E33C300
-P 6600 2800
-F 0 "P401" H 6658 2918 50  0000 L CNN
-F 1 "TestPoint" H 6658 2827 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6800 2800 50  0001 C CNN
-F 3 "~" H 6800 2800 50  0001 C CNN
-	1    6600 2800
-	1    0    0    -1  
-$EndComp
-Connection ~ 6600 2800
 Wire Wire Line
-	6600 2800 7250 2800
-Wire Wire Line
-	6000 2800 6600 2800
+	6550 2600 6550 2800
+Connection ~ 6550 2800
 $EndSCHEMATC

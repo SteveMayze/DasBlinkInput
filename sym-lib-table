@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DasBlinkInput-rescue)(type Legacy)(uri ${KIPRJMOD}/DasBlinkInput-rescue.lib)(options "")(descr ""))
+  (lib (name DasBlinkInput)(type Legacy)(uri ${KIPRJMOD}/lib/DasBlinkInput.lib)(options "")(descr ""))
+)
